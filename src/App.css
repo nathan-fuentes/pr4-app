@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+/* App.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topbar-sidebar-container {
+  display: flex;
+  flex: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.topbar-main-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto 1fr; /* Use 'auto' to allow the top bar to adjust its height based on the content */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.topbar {
+  /* Remove fixed height and let it adjust based on the content */
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.sidebar {
+  width: 80px;
+  background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-content {
+  display: flex;
+  overflow: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Add cursor: pointer for clickable icons */
+.sidebar img,
+.topbar img {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* For screens with a maximum width of 600px */
+@media (max-width: 600px) {
+  .topbar {
+    justify-content: center; /* Center the icons in the top bar */
+    height: 50px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .sidebar {
+    width: 50px; /* Reduce the width of the sidebar */
   }
 }
