@@ -1,18 +1,19 @@
 import React from 'react';
-import sidebarIcon1 from './images/icon7.svg';
+
 import sidebarIcon2 from './images/icon5.svg';
 import sidebarIcon3 from './images/icon6.svg';
 import sidebarIcon4 from './images/icon8.svg';
 
-const Sidebar = () => {
+const SideBar = () => {
   return (
-    <div className="sidebar">
-      <img src={sidebarIcon1} style={{width: '40px', height: '80px', marginBottom: '50px'}} alt="Sidebar Icon 1" />
-      <img src={sidebarIcon2} style={{width: '40px', height: '40px', marginBottom: '400px'}} alt="Sidebar Icon 2" />
-      <img src={sidebarIcon3} style={{width: '40px', height: '40px', marginBottom: '100px'}} alt="Sidebar Icon 3" />
-      <img src={sidebarIcon4} style={{width: '40px', height: '40px'}} alt="Sidebar Icon 4" />
+    <div className="side-bar">
+      <img src={sidebarIcon2} alt="Icon 2" className="icon" />
+      <img src={sidebarIcon3} alt="Icon 3" className="icon" />
+      <img src={sidebarIcon4} alt="Icon 4" className="icon" />
     </div>
   );
 };
 
-export default Sidebar;
+export default SideBar;
+
+
