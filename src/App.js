@@ -48,7 +48,7 @@ function App() {
     <div className="app">
       <div className="topbar-sidebar-container">
         <Sidebar />
-        <div className="topbar-main-container">
+        <div className="topbar-test-container">
           <TopBar handleIconClick={handleIconClick} />
           {selectedImage && (
             <div className={`main-content ${selectedImage}`}>

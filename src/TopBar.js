@@ -18,8 +18,38 @@ import topbarIcon15 from './images/icon19.svg';
 const TopBar = ({ handleIconClick }) => {
   return (
     <div className="topbar">
+      <div className="leftPortion">
+        <img class= 'item' src={topbarIcon5} style={{width: '80px', height: '80px'}} alt="Top Bar Icon 1" onClick={() => handleIconClick(1)} />
+        <img class= 'item' src={topbarIcon6} style={{width: '80px', height: '80px'}} alt="Top Bar Icon 2" onClick={() => handleIconClick(2)} />
+        <img class= 'item' src={topbarIcon7} style={{width: '40px', height: '40px'}} alt="Top Bar Icon 1" onClick={() => handleIconClick(1)} />
+        <img class= 'item' src={topbarIcon8} style={{width: '40px', height: '40px'}} alt="Top Bar Icon 2" onClick={() => handleIconClick(2)} />
+        <img class= 'item' src={topbarIcon9} style={{width: '40px', height: '40px'}} alt="Top Bar Icon 3" onClick={() => handleIconClick(3)} />
+      </div>  
+
+      <div className="middlePortion">
+        <img class= 'item' src={topbarIcon1} style={{width: '40px', height: '40px'}} alt="Top Bar Icon 1" onClick={() => handleIconClick(1)} />
+        <img class= 'item' src={topbarIcon2} style={{width: '40px', height: '40px'}} alt="Top Bar Icon 2" onClick={() => handleIconClick(2)} />
+        <img class= 'item' src={topbarIcon3} style={{width: '40px', height: '40px'}} alt="Top Bar Icon 3" onClick={() => handleIconClick(3)} />
+        <img class= 'item' src={topbarIcon4} style={{width: '40px', height: '40px'}} alt="Top Bar Icon 4" onClick={() => handleIconClick(4)} />
+        <img class= 'item' src={topbarIcon10} style={{width: '40px', height: '40px'}} alt="Top Bar Icon 1" onClick={() => handleIconClick(1)} />
+        <img class= 'item' src={topbarIcon11} style={{width: '40px', height: '40px'}} alt="Top Bar Icon 2" onClick={() => handleIconClick(2)} />
+        <img class= 'item' src={topbarIcon12} style={{width: '40px', height: '40px'}} alt="Top Bar Icon 3" onClick={() => handleIconClick(3)} />
+        <img class= 'item' src={topbarIcon13} style={{width: '40px', height: '40px'}} alt="Top Bar Icon 4" onClick={() => handleIconClick(2)} />
+        <img class= 'item' src={topbarIcon14} style={{width: '40px', height: '40px'}} alt="Top Bar Icon 3" onClick={() => handleIconClick(3)} />
+      </div>
+        
+        <img class= 'item' src={topbarIcon15} style={{width: '70px', height: '70px'}} alt="Top Bar Icon 4" onClick={() => handleIconClick(4)} />
+    </div>
+  );
+};
+
+export default TopBar;
+
+{/* 
+  
+  <div className="topbar">
         <img src={topbarIcon5} style={{width: '80px', height: '80px'}} alt="Top Bar Icon 1" onClick={() => handleIconClick(1)} />
-        <img src={topbarIcon6} style={{width: '80px', height: '80px', marginRight: '80px'}} alt="Top Bar Icon 2" onClick={() => handleIconClick(2)} />
+        <img src={topbarIcon6} style={{width: '80px', height: '80px', marginRight: '5em'}} alt="Top Bar Icon 2" onClick={() => handleIconClick(2)} />
         <img src={topbarIcon7} style={{width: '40px', height: '40px', marginRight: '5px'}} alt="Top Bar Icon 1" onClick={() => handleIconClick(1)} />
         <img src={topbarIcon8} style={{width: '40px', height: '40px', marginRight: '5px'}} alt="Top Bar Icon 2" onClick={() => handleIconClick(2)} />
         <img src={topbarIcon9} style={{width: '40px', height: '40px', marginRight: '460px'}} alt="Top Bar Icon 3" onClick={() => handleIconClick(3)} />
@@ -33,8 +63,4 @@ const TopBar = ({ handleIconClick }) => {
         <img src={topbarIcon13} style={{width: '40px', height: '40px', marginRight: '10px'}} alt="Top Bar Icon 4" onClick={() => handleIconClick(2)} />
         <img src={topbarIcon14} style={{width: '40px', height: '40px', marginRight: '500px'}} alt="Top Bar Icon 3" onClick={() => handleIconClick(3)} />
         <img src={topbarIcon15} style={{width: '70px', height: '70px'}} alt="Top Bar Icon 4" onClick={() => handleIconClick(4)} />
-    </div>
-  );
-};
-
-export default TopBar;
+    </div> */}

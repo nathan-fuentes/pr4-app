@@ -17,12 +17,33 @@
   grid-template-rows: auto 1fr; /* Use 'auto' to allow the top bar to adjust its height based on the content */
 }
 
+.topbar-test-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
 .topbar {
   /* Remove fixed height and let it adjust based on the content */
   background-color: #f0f0f0;
   display: flex;
-  justify-content: left;
+  justify-content: column;
   align-items: center;
+  justify-content: space-between;
+}
+
+.leftPortion {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
+
+.middlePortion {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 3%;
 }
 
 .sidebar {
